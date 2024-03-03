@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="/">Home</a></li>
+               <li class="breadcrumb-item active" aria-current="page">New customer</li>
+            </ol>
+        </nav>
+
+    </div>
+
+    <hr>
+
+     <form action="/create-customer">
+        <div class="container">
+         <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="nic">NIC</label>
+                    <input type="text" id="nic" name="nic" class="form-control" value="{{this.nic}}" >
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="nic">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" value="{{this.name}}" >
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="nic">Address</label>
+                    <input type="text" id="address" name="address" class="form-control" value="{{this.address}}" >
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="nic">Salary</label>
+                    <input type="text" id="salary" name="salary" class="form-control" value="{{this.salary}}">
+                </div>
+            </div>
+            <div class="col-12">
+                <br>
+                <button type="submit" class="btn btn-primary col-12">Save Customer</button>
+            </div>
+        </div>
+       </div>
+     </form>
+
+
+
+</body>
+</html>
